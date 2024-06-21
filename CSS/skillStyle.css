@@ -1,0 +1,143 @@
+h1, h2{
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1{
+    font-size: 7rem;
+    line-height: 0.85;
+}
+
+h2{
+    font-size: 3.3rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+.homeLink{
+    color: blue;
+    position: fixed;
+    left: 10px;
+    top: 0;
+}
+
+.homeLink:hover{
+    color: purple;
+}
+
+.content-wrapper h1,
+.content-wrapper h2 {
+    text-align: center;
+}
+
+.resume {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-separator {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+/* Skill categories */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.skill-list li {
+    margin-bottom: 10px;
+}
+
+.skill-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.other-Skills{
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0px;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .skill-list {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+/*Footer
+---------------------------------*/
+
+footer{
+    background: black;
+    color:beige;
+}
+footer a:hover{
+    color: beige;
+    text-decoration: none;
+}
+.social{
+    list-style-type: none;
+    padding: 0;
+    /* display: inline; */
+}
+.social li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social img{
+    width: 40px;
+    height: auto;
+}
+
+.social img:hover{
+    opacity: 50%;
+}
+
+@media screen and (min-width: 750px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+}
+
+@media  screen and (max-width: 750px) {
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
+    
+}

@@ -1,0 +1,193 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body{  
+    background-color:#F5F5F5;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1, h2, h3{
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1{
+    font-size: 5rem;
+    line-height: 0.85;
+}
+
+h2{
+    font-size: 3.3rem;
+}
+a {
+    font-size: medium;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    text-align: center;
+    padding: 0;
+}
+
+.header-image {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    background-image: url('Image/header-background.jpg'); /* Path to your header image */
+    background-size: cover; /* Ensure the image covers the header area */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Light beige background */
+}
+
+header h1, header h2 {
+    color: black; /* Text color */
+    margin: 0;
+}
+
+.homelink{
+    color: #007bff;
+    position: relative;
+    left: 10px;
+    top:0px;
+}
+
+.homelink:hover{
+    color: purple;
+}
+
+.refLink{
+    color: #007bff;
+}
+.refLink:hover{
+    color: purple;
+}
+
+
+/* Main content styles */
+.content-wrapper {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 2rem;
+}
+
+.section-separator {
+    margin-bottom: 2rem;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 1rem;
+}
+
+.experience-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/*Footer
+---------------------------------*/
+
+footer{
+    background: black;
+    color:beige;
+}
+footer a:hover{
+    color: beige;
+    text-decoration: none;
+}
+.social{
+    list-style-type: none;
+    padding: 0;
+    /* display: inline; */
+}
+.social li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social img{
+    width: 40px;
+    height: auto;
+}
+
+.social img:hover{
+    opacity: 50%;
+}
+
+@media screen and (min-width: 750px) {
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+}
+
+@media  screen and (max-width: 750px) {
+    footer{
+        text-align: center;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .header-image {
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    header h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
